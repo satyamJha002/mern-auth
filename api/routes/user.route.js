@@ -3,17 +3,7 @@ import express from "express";
 import { test } from "../controllers/user.controller.js";
 const router = express.Router();
 
-router.get(
-  "/",
-  test
-  // const user = new User(req.body);
-  // try {
-  //   await user.save();
-  //   res.status(201).send(user);
-  // } catch (error) {
-  //   res.status(400).send(user);
-  // }
-);
+router.get("/", test);
 
 /* router.post("/login", async (req, res) => {
   try {
