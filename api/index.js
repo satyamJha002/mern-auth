@@ -1,9 +1,12 @@
 import express from "express";
+import userRoute from "./routes/user.route.js";
 import mongoose from "mongoose";
 import dotenv from "dotenv";
 
 dotenv.config();
 const app = express();
+
+app.use("/api/user", userRoute);
 
 const PORT = 3000;
 
